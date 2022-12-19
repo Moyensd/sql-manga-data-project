@@ -1,0 +1,31 @@
+Select * 
+from manga$
+
+Alter table manga$
+Add Comedy Bit
+--
+
+Update manga$
+	Set Comedy = 1
+	Where genres Like '%Comedy%'
+
+Select * 
+from manga$
+
+--
+
+Alter table manga$
+Add Adventure Bit
+--
+
+Update manga$
+	Set Adventure = 1
+	Where genres Like '%Adventure%'
+
+Select * 
+from manga$
+--
+
+Alter table manga$
+Add Drama Bit
+--
