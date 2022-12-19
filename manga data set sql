@@ -36,3 +36,17 @@ Update manga$
 
 Select * 
 from manga$
+--
+
+Alter table manga$
+Add Action Bit
+--
+
+Update manga$
+	Set Action = 1
+	Where genres Like '%Action%'
+
+
+Select * 
+from manga$
+--
