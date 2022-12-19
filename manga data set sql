@@ -50,3 +50,179 @@ Update manga$
 Select * 
 from manga$
 --
+
+Alter table manga$
+Add Girls_love Bit
+--
+
+Update manga$
+	Set Girls_love = 1
+	Where genres Like '%Girls love%'
+
+
+Select * 
+from manga$
+--
+
+Alter table manga$
+Add Avant_Garde Bit
+--
+
+Update manga$
+	Set Avant_Garde = 1
+	Where genres Like '%Avant Garde%'
+
+
+Select * 
+from manga$
+--
+
+Alter table manga$
+Add Award_Winning Bit
+--
+
+Update manga$
+	Set Award_Winning = 1
+	Where genres Like '%Award Winning%'
+
+
+Select * 
+from manga$
+--
+
+Alter table manga$
+Add Boys_love Bit
+--
+
+Update manga$
+	Set Boys_love = 1
+	Where genres Like '%Boys love%'
+
+
+Select * 
+from manga$
+--
+
+Alter table manga$
+Add Fantasy Bit
+--
+
+Update manga$
+	Set Fantasy = 1
+	Where genres Like '%Fantasy%'
+
+
+Select * 
+from manga$
+--
+
+
+Alter table manga$
+Add Gourmet Bit,
+    Horror Bit,
+	Mystery Bit
+	
+--
+
+
+Alter table manga$
+Add Romance Bit,
+    "Sci-fi" Bit,
+	Slice_of_Life Bit,
+	Sports Bit,
+	Supernatural Bit,
+	Suspense Bit,
+	Ecchi Bit,
+	Erotica Bit,
+	Hentai Bit;
+--
+
+Alter table manga$
+Add Josei Bit,
+	Kids Bit,
+	Seinen Bit,
+	Shoujo Bit,
+	Shounen Bit;
+--
+
+
+Update manga$
+	Set Gourmet = 1
+	Where genres Like '%Gourmet%';
+
+Update manga$
+	Set Mystery = 1
+	Where genres Like '%Mystery%';
+
+Update manga$
+	Set Horror = 1
+	Where genres Like '%Horror%';
+
+Update manga$
+	Set Romance = 1
+	Where genres Like '%Romance%';
+
+Update manga$
+	Set Sports = 1
+	Where genres Like '%Sports%';
+
+
+Update manga$
+	Set Supernatural = 1
+	Where genres Like '%Supernatural%';
+
+Update manga$
+	Set Suspense = 1
+	Where genres Like '%Suspense%';
+
+Update manga$
+	Set Suspense = 1
+	Where genres Like '%Suspense%';
+
+Update manga$
+	Set Slice_of_Life = 1
+	Where genres Like '%Slice of Life%';
+
+Update manga$
+	Set Ecchi = 1
+	Where genres Like '%Ecchi%';
+
+Update manga$
+	Set Erotica = 1
+	Where genres Like '%Erotica%';
+
+Update manga$
+	Set Hentai = 1
+	Where genres Like '%Hentai%';
+
+Update manga$
+	Set "Sci-fi" = 1
+	Where genres Like '%Sci-fi%';
+--
+
+
+Update manga$
+	Set Josei = 1
+	Where demographics Like '%Josei%';
+
+
+Update manga$
+	Set Kids = 1
+	Where demographics Like '%Kids%';
+
+Update manga$
+	Set Seinen = 1
+	Where demographics Like '%Seinen%';
+
+Update manga$
+	Set Shoujo = 1
+	Where demographics Like '%Shoujo%';
+	
+Update manga$
+	Set Shounen = 1
+	Where demographics Like '%Shounen%';
+	
+--
+
+Select * 
+from manga$
