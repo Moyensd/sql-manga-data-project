@@ -29,3 +29,10 @@ from manga$
 Alter table manga$
 Add Drama Bit
 --
+
+Update manga$
+	Set Drama = 1
+	Where genres Like '%Drama%'
+
+Select * 
+from manga$
