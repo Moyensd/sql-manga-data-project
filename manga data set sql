@@ -226,3 +226,17 @@ Update manga$
 
 Select * 
 from manga$
+--
+
+
+Select manga_id,score,title,type,scored_by,status,volumes,chapters,real_start_date,real_end_date,genres,themes,demographics,title_english,
+	Comedy,Adventure,Drama,Action,Girls_love,Avant_Garde,Award_Winning,Boys_love,Fantasy,Gourmet,Horror,Mystery,Romance,[Sci-fi],Slice_of_Life,Sports,Supernatural,Suspense,Ecchi,Erotica,Hentai,Josei,Kids,Seinen,Shoujo,Shounen
+from manga$
+Where 
+	(type = 'manga')
+or
+	(type = 'manhwa')
+or
+	(type = 'manhua')
+or
+	(type = 'light_novel')
